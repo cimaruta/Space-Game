@@ -126,13 +126,13 @@ class NewGame:
             pygame.draw.rect(self.screen, (255,0,0), bullet)
             bullet.y -= 10
 
-            #print(collision)
+            
             if bullet.y <= self.screen_rect.y:
                 self.bullet_list.remove(bullet)
 
             elif self.on_collision(bullet):
                 self.bullet_list.remove(bullet)
-            #print(self.bullet_list)
+            
 
 if __name__ == '__main__':
     ng = NewGame()
